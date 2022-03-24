@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+    --font-family: 'Poppins', sans-serif;
+    --Red: #ff7a7a;
+    --Green: #38cc8c;
+    --Blue: #6055a5;
+    --Dark-Blue: #3e3c49; 
+    --Grayish-Blue: #b9b6d3;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+    font-family: var(--font-family);
+}
+main{
+    padding: 60px 5%;
+    background: var(--Red);
+    background-image: url('../images/bg-intro-mobile.png');
+    background-size: 19rem;
+    background-position: top;
+}
+.card-texto{
+    text-align: center;
+}
+.card-texto p{
+    margin: 30px 0px 60px 0px;
+}
+.costo{
+    background: var(--Blue);
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px 40px;
+    margin: 20px 0px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.entrada-datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    color: var(--Dark-Blue);
+}
+.entrada-datos input{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+}
+.entrada-datos button{
+    width: 100%;
+    height: 40px;
+    background: var(--Green);
+    margin: 10px 0px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.entrada-datos p{
+    color: var(--Grayish-Blue);
+}
+.entrada-datos span{
+    color: var(--Red);
+}
+@media screen and (min-width: 800px) {
+    main{
+        background-image: url('../images/bg-intro-desktop.png');
+        background-size: 50rem;
+        display: flex;
+        align-items: center;
+    }
+    .card-texto{
+        width: 60%;
+        text-align: start;
+        padding: 0px 60px;
+    }
+}
+
+
+
+
+
+
