@@ -16,14 +16,32 @@
     <div>
       <div class="costo">Try it free 7 days then $20/mo. thereafter</div>
       <div class="entrada-datos">
-        <input  type="dato"  placeholder="First Name" required="">
-        <input  type="dato"  placeholder="Last Name" required="">
-        <input  type="dato"  placeholder="Email Address" required="">
-        <input  type="dato"  placeholder="Password" required="">
-        <button>Claim your free trial </button>
-        <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+
+        <div>
+          <input  type="dato" class="entrada1"  placeholder="First Name" required="">
+          <p class="txt-error  error1">First Name connot be empty</p>
+          <img class="error   error11" src="./assets/images/icon-error.svg" alt="">
+        </div>
+        <div>
+          <input  type="dato" class="entrada2" placeholder="Last Name" required="">
+          <p class="txt-error error2">Last Name connot be empty</p>
+          <img class="error   error22" src="./assets/images/icon-error.svg" alt="">
+        </div>
+        <div>
+          <input  type="dato" class="entrada3" placeholder="Email Address" required="">
+          <p class="txt-error error3">Looks like this is not an email</p>
+          <img class="error   error33" src="./assets/images/icon-error.svg" alt="">
+        </div>
+        <div>
+          <input  type="dato" class="entrada4" placeholder="Password" required="">
+          <p class="txt-error error4">Password cannot be empty</p>
+          <img class="error   error44" src="./assets/images/icon-error.svg" alt="">
+        </div>
+        <button class="btn" >Claim your free trial </button>
+        <p class="info-service">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
       </div>
     </div>
   </main>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>

@@ -46,11 +46,34 @@ main{
     padding: 25px;
     color: var(--Dark-Blue);
 }
+.entrada-datos div{
+    width: 100%;
+    margin: 10px 0px;
+    position: relative;
+}
 .entrada-datos input{
     width: 100%;
     height: 40px;
-    margin: 10px 0px;
 }
+.error{
+    position: absolute;
+    right: 0;
+    top: 15%;
+    opacity: 0;
+}
+.txt-error{
+    font-size: 12px;
+    color: var(--Red);
+    text-align: end;
+    opacity: 0;
+}
+.txt-error.active,
+.error.active{
+    opacity: 1;
+}
+
+
+
 .entrada-datos button{
     width: 100%;
     height: 40px;
@@ -62,7 +85,7 @@ main{
     border: none;
     cursor: pointer;
 }
-.entrada-datos p{
+.info-service{
     color: var(--Grayish-Blue);
 }
 .entrada-datos span{
